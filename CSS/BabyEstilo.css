@@ -1,0 +1,225 @@
+.navbar-nav .nav-link:hover{
+    background-color: yellow;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 0.2s ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logoImg{
+    width: 100px;
+    height: auto;
+}
+#inicio{
+    display: inline-block;
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+    background-image: url('../Images/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.inicio-titulo{
+    font-family:sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 30%;
+    font-size: 48px;
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+}
+/* Opción A: Aplicarlo a todo el sitio web */
+body {
+  font-family: "Fredoka", sans-serif;
+}
+
+/* Opción B: Aplicarlo específicamente a los títulos y encabezados */
+h1, h2, h3, .navbar-brand span {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* Puedes ajustar el grosor (400, 500, 600, 700) */
+  font-style: normal;
+}
+#inicio .inicio-titulo {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+#conocenos{
+    background-color: lightgoldenrodyellow;
+    background-size: cover;
+    height: 100vh;
+}
+
+.imagen-circulo{
+    width: 620px;
+    height: 620x;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.tarjeta_juguete{
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-color: antiquewhite;
+  gap: 20px;
+  align-items: stretch;
+}
+.tarjeta_juguete:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.tarjeta_juguete img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tarjeta_juguete span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.tarjeta_juguete h5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tarjeta_juguete button{
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px; 
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto; 
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.tarjeta_accesorio{
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-color: antiquewhite;
+  gap: 20px;
+  align-items: stretch;
+}
+.tarjeta_accesorio:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.tarjeta_accesorio img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tarjeta_accesorio span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.tarjeta_accesorio h5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tarjeta_accesorio button{
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px; 
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto; 
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.contenido{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left:200px;
+    padding-right:40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+
+}
+
+footer a{
+    color: white;
+}
+a:hover{
+    color: orange;
+}
+@media (max-width: 576px) {
+  .collapse-horizontal .border-start {
+    width: 240px;
+  }
+}
+
+
+/*Responsive tableta*/
+@media(max-width:767px){
+    .inicio-titulo{
+        color: whitesmoke;
+        margin-top: 10%;
+    }
+    #inicio{
+        height: 80vh;
+
+    }
+}
+@media(max-width:575px){
+    #inicio{
+    background-position: bottom;
+    background-size: cover;
+    height: 50vh;
+    }
+    #inicio h1{
+        display: none;
+    }
+    #inicio p{
+        text-align: start;
+
+    }
+    .tarjeta_plato span{
+        display: none;
+    }
+    @media (max-width: 768px) {
+    .imagen-circulo {
+    max-width: 280px;
+    height: 280px;
+    }
+  
+    #inicio h1 {
+    font-size: 2rem;
+    }
+    @media (max-width: 768px) {
+    #inicio {
+     padding: 40px 15px;
+    }
+  
+    #inicio h1 {
+    font-size: 2.2rem; 
+    }
+}
+}
+}
