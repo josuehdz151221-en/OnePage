@@ -35,16 +35,13 @@ html{
 h1{
     display: inline-block;
 }
-/* Opción A: Aplicarlo a todo el sitio web */
 body {
   font-family: "Fredoka", sans-serif;
 }
-
-/* Opción B: Aplicarlo específicamente a los títulos y encabezados */
 h1, h2, h3, .navbar-brand span {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600; /* Puedes ajustar el grosor (400, 500, 600, 700) */
+  font-weight: 600; 
   font-style: normal;
 }
 #inicio .inicio-titulo {
